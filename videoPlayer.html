@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-clone</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assests/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assests/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assests/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="./assests/css/styles.css">
+    <link rel="stylesheet" href="./assests/css/videoPlayer.css">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <button id="sidemenuToggle" class="toggle-btn"><i class="fa-solid fa-bars"
+                    style="color: #ffffff;"></i></button>
+            <img src="./assests/images/Youtube-Logo.png" alt="">
+        </div>
+        <div class="search-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #adadad;"></i>
+            </div>
+            <div class="mic">
+                <i class="fa-solid fa-microphone" style="color: #adadad;"></i>
+            </div>
+        </div>
+        <div>
+            <img src="./assests/images/Profile.png" alt="">
+        </div>
+    </header>
+
+    <main class="playerBody">
+        <div class="player-container">
+            <div class="video-Player">
+                <div id="player" class="video-play-section"></div>
+                <h3 id="playing-video-title" class="player-title"></h3>
+                <div id="desc" class="video-description">
+                </div>
+            </div>
+            <div class="recommended"></div>
+        </div>
+    </main>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./assests/js/videoPlayer.js"></script>
+</body>
+
+</html>
